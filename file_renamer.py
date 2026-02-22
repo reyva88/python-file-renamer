@@ -14,8 +14,7 @@ def rename_files(folder_path, prefix):
 
     print("Files renamed successfully!")
 
-# Example usage:
-folder = "your_folder_path_here"
-prefix_name = "renamed_file"
-
-rename_files(folder, prefix_name)
+if __name__ == "__main__":
+    folder = input("Enter folder path: ")
+    prefix_name = input("Enter new file prefix: ")
+    rename_files(folder, prefix_name)
